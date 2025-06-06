@@ -1,24 +1,25 @@
-**Fitness Booking API**
+# Fitness Booking API
 
 A simple booking system for a fictional fitness studio built with FastAPI. This API allows clients to view available classes, book classes, and check their bookings — all with timezone support and input validation.
+---
+##  **FEATURES**
 
-**FEATURES**
+-- View upcoming fitness classes
 
---View upcoming fitness classes
+-- Book a class with client name and email
 
---Book a class with client name and email
+-- Retrieve all bookings by email
 
---Retrieve all bookings by email
+-- Timezone-aware date & time handling (default IST)
 
---Timezone-aware date & time handling (default IST)
+-- In-memory database (no setup required)
 
---In-memory database (no setup required)
+-- Error handling and validation included
 
---Error handling and validation included
+-- Unit testing using Pytest
 
---Unit testing using Pytest
-
-**TECHNOLOGIES USED**
+---
+## **TECHNOLOGIES USED**
 
 --Python 3.9+
 
@@ -32,7 +33,8 @@ A simple booking system for a fictional fitness studio built with FastAPI. This 
 
 --pytest
 
-**SETUP INSTRUCTIONS**
+---
+### **SETUP INSTRUCTIONS**
 
 #Clone the repo:
 git clone https://github.com/usernam/Fitness_booking_api.git
@@ -54,37 +56,39 @@ uvicorn main:app --reload
 **Open in browser:**
 http://127.0.0.1:8000/docs
 
-API ENDPOINTS
+**API ENDPOINTS**
 
-GET /classes
+*GET /classes*
 Returns a list of all upcoming fitness classes.
 Query param: timezone_str (optional, default = Asia/Kolkata)
 
 **Sample curl:**
 curl -X GET "http://127.0.0.1:8000/classes?timezone_str=Asia/Kolkata"
 
-POST /book
+*POST /book*
 Accepts a booking request with class_id, client_name, and client_email. Reduces available slots if booking is successful.
 
-Request body:
+*Request body:*
 {
 "class_id": 1,
 "client_name": "Subitha",
 "client_email": "subitha@example.com"
 }
 
-Sample curl:
-curl -X POST "http://127.0.0.1:8000/book" -H "Content-Type: application/json" -d "{"class_id":1,"client_name":"Subitha","client_email":"subitha@example.com"}"
+**Sample curl:**
+*curl -X POST "http://127.0.0.1:8000/book" -H "Content-Type: application/json" -d "{"class_id":1,"client_name":"Subitha","client_email":"subitha@example.com"}"*
 
-GET /bookings
+*GET /bookings*
 Returns all bookings made using a specific email.
 
 Query param: email (required)
 
-Sample curl:
-curl -X GET "http://127.0.0.1:8000/bookings?email=subitha@example.com"
+**Sample curl:**
+*curl -X GET "http://127.0.0.1:8000/bookings?email=subitha@example.com"*
 
-**SAMPLE SEED DATA**
+---
+
+## **SAMPLE SEED DATA**
 
 [
 {
@@ -110,40 +114,45 @@ curl -X GET "http://127.0.0.1:8000/bookings?email=subitha@example.com"
 }
 ]
 
-**TESTING**
+---
 
-Run tests with:
-pytest -v
+## **TESTING**
 
-Expected output:
-test_main.py::test_book_class PASSED
+**Run tests with:**
+--pytest -v
+
+**Expected output:**
+--test_main.py::test_book_class PASSED
 
 **KEY CONCEPTS USED**
 
-*FastAPI* for rapid API development
+--*FastAPI* for rapid API development
 
-*Pydantic* models for input validation
+--*Pydantic* models for input validation
 
-*pytz* for timezone conversion
+--*pytz* for timezone conversion
 
-*uuid* for generating unique booking IDs
+--*uuid* for generating unique booking IDs
 
-*In-memory list*-based DB (no setup required)
+--*In-memory list*-based DB (no setup required)
 
-*HTTPException* for handling error states
+--*HTTPException* for handling error states
+---
 
-**LOOM VIDEO**
+## **LOOM VIDEO**
 
-Submit a Loom walkthrough video explaining the code and testing process.
-Example link: https://www.loom.com/share/your-video-id (replace with your video)
+-- Submit a Loom walkthrough video explaining the code and testing process.
+**Example link:** https://www.loom.com/share/your-video-id (replace with your video)
+---
 
-**AUTHOR**
+## **AUTHOR**
 
---Subitha M
---Email: subitha@example.com
---**GitHub: https://github.com/subitha1007
-
+--*Subitha M*
+--*Email: subitha@example.com*
+--*GitHub: https://github.com/subitha1007*
+---
 **LICENSE**
 
---This project is for demonstration and educational use only.
+--*This project is for demonstration and educational use only.*
 
+---
