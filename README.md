@@ -1,9 +1,11 @@
 # Fitness Booking API
-
-A simple booking system for a fictional fitness studio built with FastAPI. This API allows clients to view available classes, book classes, and check their bookings — all with timezone support and input validation.
 ---
-##  **FEATURES**
+A simple booking system for a fictional fitness studio built with FastAPI. This API allows clients to view available classes, book classes, and check their bookings — all with timezone support and input validation.
 
+---
+
+##  **FEATURES**
+---
 -- View upcoming fitness classes
 
 -- Book a class with client name and email
@@ -19,8 +21,9 @@ A simple booking system for a fictional fitness studio built with FastAPI. This 
 -- Unit testing using Pytest
 
 ---
-## **TECHNOLOGIES USED**
 
+## **TECHNOLOGIES USED**
+---
 --Python 3.9+
 
 --FastAPI
@@ -34,8 +37,9 @@ A simple booking system for a fictional fitness studio built with FastAPI. This 
 --pytest
 
 ---
-### **SETUP INSTRUCTIONS**
 
+### **SETUP INSTRUCTIONS**
+---
 #Clone the repo:
 git clone https://github.com/usernam/Fitness_booking_api.git
 cd Fitness_booking_api
@@ -56,7 +60,10 @@ uvicorn main:app --reload
 **Open in browser:**
 http://127.0.0.1:8000/docs
 
-**API ENDPOINTS**
+---
+
+## **API ENDPOINTS**
+---
 
 *GET /classes*
 Returns a list of all upcoming fitness classes.
@@ -89,7 +96,7 @@ Query param: email (required)
 ---
 
 ## **SAMPLE SEED DATA**
-
+---
 [
 {
 "id": 1,
@@ -117,7 +124,7 @@ Query param: email (required)
 ---
 
 ## **TESTING**
-
+---
 **Run tests with:**
 --pytest -v
 
