@@ -144,12 +144,14 @@ Query param: email (required)
 --*In-memory list*-based DB (no setup required)
 
 --*HTTPException* for handling error states
+
 ---
 
 ## **LOOM VIDEO**
 
 -- Submit a Loom walkthrough video explaining the code and testing process.
 **Example link:** https://www.loom.com/share/your-video-id (replace with your video)
+
 ---
 
 ## **AUTHOR**
@@ -157,6 +159,7 @@ Query param: email (required)
 --*Subitha M*
 --*Email: subitha@example.com*
 --*GitHub: https://github.com/subitha1007*
+
 ---
 **LICENSE**
 
