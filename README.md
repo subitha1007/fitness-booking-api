@@ -150,7 +150,7 @@ Query param: email (required)
 ## **LOOM VIDEO**
 
 -- Submit a Loom walkthrough video explaining the code and testing process.
-**Example link:** https://www.loom.com/share/your-video-id (replace with your video)
+**Example link:** https://drive.google.com/file/d/1Wi_1U2Mw0X06i97r2iXUyked4v6MDDSW/view?usp=drivesdk
 
 ---
 
